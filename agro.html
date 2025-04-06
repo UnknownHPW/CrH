@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agro.css">
+    <title>Controle de Horários</title>
+</head>
+<body>
+    <h1>Horários</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Atividade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="schedule">
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    <div class="edit-buttons">
+        <button onclick="requestEdit()">Editar Horários</button>
+        <button onclick="addRow()">Adicionar Horário</button>
+        <div id="login" class="hidden">
+            <p>Insira a senha para acessar o modo de edição:</p>
+            <input type="password" id="password" placeholder="Senha">
+            <button onclick="authenticate()">Entrar</button>
+        </div>
+    </div>
+<script src="agro.js"></script>
+</body>
+</html>
